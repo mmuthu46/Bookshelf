@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T00:00:00.000Z",
+  "updatedAt": "2026-06-19T12:00:00.000Z",
   "books": [
     {
       "id": "ti-spra524-svpwm",
@@ -8,8 +8,15 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 1998,
-      "categories": ["Motor Control", "Power Electronics"],
-      "tags": ["SVPWM", "PMSM", "Sinusoidal Drive"],
+      "categories": [
+        "Motor Control",
+        "Power Electronics"
+      ],
+      "tags": [
+        "SVPWM",
+        "PMSM",
+        "Sinusoidal Drive"
+      ],
       "license": "Link-only",
       "notes": "Classic application note covering space vector PWM theory and sinusoidal commutation fundamentals for PMSM motors."
     },
@@ -20,8 +27,18 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 2013,
-      "categories": ["Motor Control", "Power Electronics", "Real-Time"],
-      "tags": ["FOC", "PMSM", "Clarke Transform", "Park Transform", "PI Control"],
+      "categories": [
+        "Motor Control",
+        "Power Electronics",
+        "Real-Time"
+      ],
+      "tags": [
+        "FOC",
+        "PMSM",
+        "Clarke Transform",
+        "Park Transform",
+        "PI Control"
+      ],
       "license": "Link-only",
       "notes": "Core FOC reference: Clarke/Park transforms, current control loops, and PI tuning guidance for PMSM drives."
     },
@@ -32,8 +49,17 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 2017,
-      "categories": ["Motor Control", "Real-Time"],
-      "tags": ["FOC", "Sensorless", "FAST Observer", "PMSM", "BLDC"],
+      "categories": [
+        "Motor Control",
+        "Real-Time"
+      ],
+      "tags": [
+        "FOC",
+        "Sensorless",
+        "FAST Observer",
+        "PMSM",
+        "BLDC"
+      ],
       "license": "Link-only",
       "notes": "Sensorless FOC overview built around TI's FAST estimator (flux, angle, speed, torque) for self-tuning motor control."
     },
@@ -44,8 +70,16 @@
       "author": "Microchip Technology",
       "publisher": "Microchip",
       "year": 2010,
-      "categories": ["Motor Control", "Real-Time"],
-      "tags": ["FOC", "Sensorless", "PMSM", "SMO"],
+      "categories": [
+        "Motor Control",
+        "Real-Time"
+      ],
+      "tags": [
+        "FOC",
+        "Sensorless",
+        "PMSM",
+        "SMO"
+      ],
       "license": "Link-only",
       "notes": "Sliding mode observer based sensorless FOC implementation with dsPIC reference firmware structure."
     },
@@ -56,8 +90,17 @@
       "author": "STMicroelectronics",
       "publisher": "STMicroelectronics",
       "year": 2019,
-      "categories": ["Motor Control", "Embedded", "Real-Time"],
-      "tags": ["FOC", "PMSM", "STM32", "Motor Control Workbench"],
+      "categories": [
+        "Motor Control",
+        "Embedded",
+        "Real-Time"
+      ],
+      "tags": [
+        "FOC",
+        "PMSM",
+        "STM32",
+        "Motor Control Workbench"
+      ],
       "license": "Link-only",
       "notes": "User manual for ST's motor control firmware library covering FOC state machine, workbench tooling, and project configuration."
     },
@@ -68,8 +111,15 @@
       "author": "MathWorks",
       "publisher": "MathWorks",
       "year": 2023,
-      "categories": ["Motor Control"],
-      "tags": ["DTC", "Torque Control", "PMSM", "Induction Motor"],
+      "categories": [
+        "Motor Control"
+      ],
+      "tags": [
+        "DTC",
+        "Torque Control",
+        "PMSM",
+        "Induction Motor"
+      ],
       "license": "Link-only",
       "notes": "Introductory tutorial on Direct Torque Control concepts, switching tables, and hysteresis comparators."
     },
@@ -80,8 +130,16 @@
       "author": "Arm Software",
       "publisher": "Arm",
       "year": 2024,
-      "categories": ["Embedded", "AI-on-Embedded"],
-      "tags": ["CMSIS", "TinyML", "Cortex-M", "Quantization"],
+      "categories": [
+        "Embedded",
+        "AI-on-Embedded"
+      ],
+      "tags": [
+        "CMSIS",
+        "TinyML",
+        "Cortex-M",
+        "Quantization"
+      ],
       "license": "Open Access",
       "notes": "Reference documentation for CMSIS-NN kernels used to accelerate quantized neural network inference on Cortex-M MCUs."
     },
@@ -92,8 +150,16 @@
       "author": "Google",
       "publisher": "TensorFlow",
       "year": 2024,
-      "categories": ["Embedded", "AI-on-Embedded"],
-      "tags": ["TFLM", "TinyML", "Edge AI", "Quantization"],
+      "categories": [
+        "Embedded",
+        "AI-on-Embedded"
+      ],
+      "tags": [
+        "TFLM",
+        "TinyML",
+        "Edge AI",
+        "Quantization"
+      ],
       "license": "Open Access",
       "notes": "Official docs for deploying TFLite Micro models on resource-constrained microcontrollers, including memory planning."
     },
@@ -104,8 +170,16 @@
       "author": "MISRA Consortium",
       "publisher": "MISRA",
       "year": 2012,
-      "categories": ["Safety", "Embedded"],
-      "tags": ["MISRA", "Static Analysis", "Coding Standard", "ISO 26262"],
+      "categories": [
+        "Safety",
+        "Embedded"
+      ],
+      "tags": [
+        "MISRA",
+        "Static Analysis",
+        "Coding Standard",
+        "ISO 26262"
+      ],
       "license": "Link-only",
       "notes": "Landing page for the MISRA C coding guideline set used widely in automotive and safety-critical embedded software."
     },
@@ -116,8 +190,16 @@
       "author": "Amazon Web Services",
       "publisher": "FreeRTOS",
       "year": 2023,
-      "categories": ["Embedded", "Real-Time"],
-      "tags": ["RTOS", "FreeRTOS", "Scheduling", "Task Management"],
+      "categories": [
+        "Embedded",
+        "Real-Time"
+      ],
+      "tags": [
+        "RTOS",
+        "FreeRTOS",
+        "Scheduling",
+        "Task Management"
+      ],
       "license": "Open Access",
       "notes": "Reference guide and free e-book covering FreeRTOS task scheduling, queues, semaphores, and memory management."
     },
@@ -128,8 +210,15 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 1999,
-      "categories": ["Motor Control", "Power Electronics"],
-      "tags": ["SVPWM", "Overmodulation", "Inverter"],
+      "categories": [
+        "Motor Control",
+        "Power Electronics"
+      ],
+      "tags": [
+        "SVPWM",
+        "Overmodulation",
+        "Inverter"
+      ],
       "license": "Link-only",
       "notes": "Detailed treatment of SVPWM sector identification and overmodulation strategies for three-phase inverters."
     },
@@ -140,8 +229,15 @@
       "author": "International Organization for Standardization",
       "publisher": "ISO",
       "year": 2018,
-      "categories": ["Safety", "Embedded"],
-      "tags": ["ISO 26262", "Functional Safety", "ASIL"],
+      "categories": [
+        "Safety",
+        "Embedded"
+      ],
+      "tags": [
+        "ISO 26262",
+        "Functional Safety",
+        "ASIL"
+      ],
       "license": "Link-only",
       "notes": "Official ISO landing page describing the scope and structure of the ISO 26262 functional safety standard for road vehicles."
     },
@@ -152,8 +248,18 @@
       "author": "CAN in Automation",
       "publisher": "CiA",
       "year": 2024,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["CAN", "CAN FD", "CAN XL", "Serial Bus", "Automotive", "Bit Timing"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "CAN",
+        "CAN FD",
+        "CAN XL",
+        "Serial Bus",
+        "Automotive",
+        "Bit Timing"
+      ],
       "license": "Open Access",
       "notes": "Comprehensive knowledge base covering CAN, CAN FD, and CAN XL frame formats, bit timing, error handling, and physical layer — maintained by the official CAN standardisation body."
     },
@@ -164,8 +270,19 @@
       "author": "CAN in Automation",
       "publisher": "CiA",
       "year": 2023,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["CANopen", "CAN", "SDO", "PDO", "NMT", "Object Dictionary", "EDS"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "CANopen",
+        "CAN",
+        "SDO",
+        "PDO",
+        "NMT",
+        "Object Dictionary",
+        "EDS"
+      ],
       "license": "Link-only",
       "notes": "Landing page for the CANopen application layer specification — object dictionary, PDO/SDO communication, NMT state machine, LSS protocol, and device profiles."
     },
@@ -176,8 +293,18 @@
       "author": "Vector Informatik",
       "publisher": "Vector",
       "year": 2024,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["CAN", "CAN FD", "CAN XL", "Diagnostics", "Automotive", "Bus Topology"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "CAN",
+        "CAN FD",
+        "CAN XL",
+        "Diagnostics",
+        "Automotive",
+        "Bus Topology"
+      ],
       "license": "Open Access",
       "notes": "Vector's CAN technology series covering frame types, error frames, overload frames, CAN FD speed modes, CAN XL, and practical bus topology guidelines."
     },
@@ -188,8 +315,17 @@
       "author": "CAN in Automation",
       "publisher": "CiA",
       "year": 2023,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["LIN", "Local Interconnect Network", "Master-Slave", "Automotive", "Body Electronics"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "LIN",
+        "Local Interconnect Network",
+        "Master-Slave",
+        "Automotive",
+        "Body Electronics"
+      ],
       "license": "Open Access",
       "notes": "Overview of the LIN protocol — single-wire master/slave bus, break field detection, frame structure, scheduler tables, and automotive body electronics use cases."
     },
@@ -200,8 +336,18 @@
       "author": "LIN Consortium / CiA",
       "publisher": "LIN CiA",
       "year": 2016,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["LIN", "LIN 2.2A", "Scheduler Table", "LDF", "Transport Layer", "Diagnostics"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "LIN",
+        "LIN 2.2A",
+        "Scheduler Table",
+        "LDF",
+        "Transport Layer",
+        "Diagnostics"
+      ],
       "license": "Link-only",
       "notes": "Official LIN 2.2A specification — physical layer, data link layer, transport layer, diagnostic frames, and LIN description file (LDF) format."
     },
@@ -212,8 +358,18 @@
       "author": "Modbus Organization",
       "publisher": "Modbus Organization",
       "year": 2006,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["Modbus", "Modbus RTU", "Modbus TCP", "Industrial", "Holding Registers", "Function Codes"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "Modbus",
+        "Modbus RTU",
+        "Modbus TCP",
+        "Industrial",
+        "Holding Registers",
+        "Function Codes"
+      ],
       "license": "Open Access",
       "notes": "Free official Modbus RTU, ASCII, and TCP/IP specification PDFs — function codes, register maps, exception codes, and framing. Essential for industrial embedded field devices."
     },
@@ -224,8 +380,18 @@
       "author": "NXP Semiconductors",
       "publisher": "NXP",
       "year": 2021,
-      "categories": ["Embedded", "Protocols"],
-      "tags": ["I2C", "TWI", "Multi-master", "Clock Stretching", "10-bit Addressing", "Fast Plus"],
+      "categories": [
+        "Embedded",
+        "Protocols"
+      ],
+      "tags": [
+        "I2C",
+        "TWI",
+        "Multi-master",
+        "Clock Stretching",
+        "10-bit Addressing",
+        "Fast Plus"
+      ],
       "license": "Open Access",
       "notes": "Definitive I²C specification from NXP — standard/fast/fast-plus/high-speed/ultra-fast modes, bus arbitration, multi-master operation, clock stretching, and 10-bit addressing."
     },
@@ -236,8 +402,19 @@
       "author": "AUTOSAR Consortium",
       "publisher": "AUTOSAR",
       "year": 2023,
-      "categories": ["Embedded", "Safety"],
-      "tags": ["AUTOSAR", "BSW", "RTE", "SWC", "ARXML", "Com Stack", "Classic Platform"],
+      "categories": [
+        "Embedded",
+        "Safety"
+      ],
+      "tags": [
+        "AUTOSAR",
+        "BSW",
+        "RTE",
+        "SWC",
+        "ARXML",
+        "Com Stack",
+        "Classic Platform"
+      ],
       "license": "Open Access",
       "notes": "AUTOSAR Classic Platform specification set — layered BSW architecture, OS, Com/Mem/Diag modules, RTE generation, SWC interfaces, and ARXML tool exchange format."
     },
@@ -248,8 +425,18 @@
       "author": "AUTOSAR Consortium",
       "publisher": "AUTOSAR",
       "year": 2023,
-      "categories": ["Embedded", "Safety"],
-      "tags": ["Adaptive AUTOSAR", "SOME/IP", "DDS", "POSIX", "OTA", "Execution Manager"],
+      "categories": [
+        "Embedded",
+        "Safety"
+      ],
+      "tags": [
+        "Adaptive AUTOSAR",
+        "SOME/IP",
+        "DDS",
+        "POSIX",
+        "OTA",
+        "Execution Manager"
+      ],
       "license": "Open Access",
       "notes": "AUTOSAR Adaptive Platform for high-compute ECUs — service-oriented architecture (SOME/IP, DDS), POSIX OS, Execution Manager, Update & Config Mgmt, and cybersecurity."
     },
@@ -260,8 +447,18 @@
       "author": "VDA QMC",
       "publisher": "Automotive SPICE",
       "year": 2023,
-      "categories": ["Safety", "Embedded"],
-      "tags": ["ASPICE", "Automotive SPICE", "Process Assessment", "Capability Level", "VDA", "OEM Audit"],
+      "categories": [
+        "Safety",
+        "Embedded"
+      ],
+      "tags": [
+        "ASPICE",
+        "Automotive SPICE",
+        "Process Assessment",
+        "Capability Level",
+        "VDA",
+        "OEM Audit"
+      ],
       "license": "Open Access",
       "notes": "Official Automotive SPICE landing page — process assessment model for automotive software development covering engineering, supporting, and management processes up to CL3."
     },
@@ -272,8 +469,18 @@
       "author": "intacs",
       "publisher": "intacs",
       "year": 2024,
-      "categories": ["Safety", "Embedded"],
-      "tags": ["ASPICE", "intacs", "Assessor", "Competence Profile", "Provisional Assessor", "Principal Assessor"],
+      "categories": [
+        "Safety",
+        "Embedded"
+      ],
+      "tags": [
+        "ASPICE",
+        "intacs",
+        "Assessor",
+        "Competence Profile",
+        "Provisional Assessor",
+        "Principal Assessor"
+      ],
       "license": "Open Access",
       "notes": "Official intacs qualification scheme for ASPICE assessors — competence profiles (Provisional, Competent, Principal Assessor), self-assessment worksheets, and exam preparation resources."
     },
@@ -284,8 +491,18 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 2011,
-      "categories": ["Power Electronics", "Embedded"],
-      "tags": ["Buck Converter", "DC-DC", "Inductor Sizing", "Capacitor Selection", "CCM", "DCM"],
+      "categories": [
+        "Power Electronics",
+        "Embedded"
+      ],
+      "tags": [
+        "Buck Converter",
+        "DC-DC",
+        "Inductor Sizing",
+        "Capacitor Selection",
+        "CCM",
+        "DCM"
+      ],
       "license": "Open Access",
       "notes": "Step-by-step power stage calculations for a synchronous buck converter — inductor value, output/input capacitor sizing, switch selection, and loop bandwidth guidelines."
     },
@@ -296,8 +513,18 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 2024,
-      "categories": ["Power Electronics"],
-      "tags": ["Gate Driver", "MOSFET", "IGBT", "GaN", "Bootstrap", "Isolated Driver", "Propagation Delay"],
+      "categories": [
+        "Power Electronics"
+      ],
+      "tags": [
+        "Gate Driver",
+        "MOSFET",
+        "IGBT",
+        "GaN",
+        "Bootstrap",
+        "Isolated Driver",
+        "Propagation Delay"
+      ],
       "license": "Open Access",
       "notes": "TI's gate driver technology overview — isolated/non-isolated topologies, bootstrap drivers, propagation delay, Miller clamp, and cross-conduction prevention for WBG devices."
     },
@@ -308,8 +535,19 @@
       "author": "MathWorks",
       "publisher": "MathWorks",
       "year": 2024,
-      "categories": ["Motor Control", "Real-Time"],
-      "tags": ["FOC", "PMSM", "BLDC", "Simulink", "Model-based Design", "MTPA", "Flux Weakening"],
+      "categories": [
+        "Motor Control",
+        "Real-Time"
+      ],
+      "tags": [
+        "FOC",
+        "PMSM",
+        "BLDC",
+        "Simulink",
+        "Model-based Design",
+        "MTPA",
+        "Flux Weakening"
+      ],
       "license": "Link-only",
       "notes": "MathWorks Motor Control Blockset guide for FOC design — Clarke/Park transforms, current loop PID tuning, MTPA, flux weakening, and automatic C code generation for embedded targets."
     },
@@ -320,8 +558,19 @@
       "author": "Texas Instruments",
       "publisher": "Texas Instruments",
       "year": 2024,
-      "categories": ["Motor Control", "Embedded", "Real-Time"],
-      "tags": ["C2000", "FOC", "Sensorless", "FAST Estimator", "Flying Start", "Current Sensing"],
+      "categories": [
+        "Motor Control",
+        "Embedded",
+        "Real-Time"
+      ],
+      "tags": [
+        "C2000",
+        "FOC",
+        "Sensorless",
+        "FAST Estimator",
+        "Flying Start",
+        "Current Sensing"
+      ],
       "license": "Open Access",
       "notes": "TI's C2000 MotorControl SDK providing optimised FOC libraries, sensorless estimators, hardware abstraction, and reference designs for PMSM and BLDC motor drives."
     },
@@ -332,8 +581,18 @@
       "author": "LangChain Inc.",
       "publisher": "LangChain",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["LangChain", "LLM", "RAG", "Agents", "Chains", "Retrieval", "Python"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "LangChain",
+        "LLM",
+        "RAG",
+        "Agents",
+        "Chains",
+        "Retrieval",
+        "Python"
+      ],
       "license": "Open Access",
       "notes": "Official Python docs for LangChain — building LLM applications with chains, retrieval-augmented generation, tool-using agents, memory, and streaming responses."
     },
@@ -344,8 +603,18 @@
       "author": "LlamaIndex Inc.",
       "publisher": "LlamaIndex",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["LlamaIndex", "RAG", "Vector Store", "Indexing", "Query Engine", "LLM", "Sub-question"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "LlamaIndex",
+        "RAG",
+        "Vector Store",
+        "Indexing",
+        "Query Engine",
+        "LLM",
+        "Sub-question"
+      ],
       "license": "Open Access",
       "notes": "Framework for connecting custom data sources to LLMs — document loaders, vector/keyword indices, sub-question decomposition, agentic pipelines, and multi-modal RAG."
     },
@@ -356,8 +625,17 @@
       "author": "Yunfan Gao et al.",
       "publisher": "arXiv",
       "year": 2023,
-      "categories": ["AI & ML"],
-      "tags": ["RAG", "Retrieval Augmented Generation", "LLM", "Vector Search", "Embeddings", "Chunking"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "RAG",
+        "Retrieval Augmented Generation",
+        "LLM",
+        "Vector Search",
+        "Embeddings",
+        "Chunking"
+      ],
       "license": "Open Access",
       "notes": "Seminal survey of RAG architectures — naive, advanced, and modular RAG. Covers indexing pipelines, chunking strategies, dense/sparse retrieval, reranking, and evaluation benchmarks."
     },
@@ -368,8 +646,18 @@
       "author": "HuggingFace",
       "publisher": "HuggingFace",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["Transformers", "NLP", "HuggingFace", "Fine-tuning", "BERT", "Tokenizer", "Datasets"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "Transformers",
+        "NLP",
+        "HuggingFace",
+        "Fine-tuning",
+        "BERT",
+        "Tokenizer",
+        "Datasets"
+      ],
       "license": "Open Access",
       "notes": "Free in-depth course on the HuggingFace Transformers library — tokenizers, fine-tuning pre-trained models, sequence classification, NER, question answering, and text generation."
     },
@@ -380,8 +668,18 @@
       "author": "Jeremy Howard, Sylvain Gugger",
       "publisher": "fast.ai",
       "year": 2022,
-      "categories": ["AI & ML"],
-      "tags": ["Deep Learning", "fastai", "PyTorch", "CNN", "Transfer Learning", "Computer Vision", "Tabular"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "Deep Learning",
+        "fastai",
+        "PyTorch",
+        "CNN",
+        "Transfer Learning",
+        "Computer Vision",
+        "Tabular"
+      ],
       "license": "Open Access",
       "notes": "Top-down practical deep learning course — vision models, NLP, tabular data, collaborative filtering, model deployment, and writing models from scratch in fastai/PyTorch."
     },
@@ -392,8 +690,19 @@
       "author": "Scikit-learn Developers",
       "publisher": "Scikit-learn",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["Scikit-learn", "Machine Learning", "Classification", "Regression", "Clustering", "SVM", "Random Forest", "Gradient Boosting"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "Scikit-learn",
+        "Machine Learning",
+        "Classification",
+        "Regression",
+        "Clustering",
+        "SVM",
+        "Random Forest",
+        "Gradient Boosting"
+      ],
       "license": "Open Access",
       "notes": "Comprehensive scikit-learn reference — supervised/unsupervised algorithms, preprocessing pipelines, cross-validation, hyperparameter search, and model evaluation metrics."
     },
@@ -404,8 +713,17 @@
       "author": "MLflow Community",
       "publisher": "Databricks / MLflow",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["MLflow", "MLOps", "Experiment Tracking", "Model Registry", "Model Serving", "Artifacts"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "MLflow",
+        "MLOps",
+        "Experiment Tracking",
+        "Model Registry",
+        "Model Serving",
+        "Artifacts"
+      ],
       "license": "Open Access",
       "notes": "Open-source ML lifecycle platform — experiment tracking with runs/metrics/params, model packaging in MLmodel format, model registry, and deployment to REST endpoints."
     },
@@ -416,8 +734,18 @@
       "author": "DAIR.AI",
       "publisher": "DAIR.AI",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["Prompt Engineering", "LLM", "Chain-of-Thought", "Few-shot", "ReAct", "Tree-of-Thought", "Zero-shot"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "Prompt Engineering",
+        "LLM",
+        "Chain-of-Thought",
+        "Few-shot",
+        "ReAct",
+        "Tree-of-Thought",
+        "Zero-shot"
+      ],
       "license": "Open Access",
       "notes": "Comprehensive prompt engineering guide — zero/few-shot prompting, chain-of-thought, self-consistency, tree-of-thought, ReAct, and automated prompt optimisation techniques."
     },
@@ -428,8 +756,18 @@
       "author": "LangChain Inc.",
       "publisher": "LangChain",
       "year": 2024,
-      "categories": ["AI & ML"],
-      "tags": ["LangGraph", "AI Agents", "Multi-agent", "State Graph", "Human-in-the-loop", "Persistence", "Orchestration"],
+      "categories": [
+        "AI & ML"
+      ],
+      "tags": [
+        "LangGraph",
+        "AI Agents",
+        "Multi-agent",
+        "State Graph",
+        "Human-in-the-loop",
+        "Persistence",
+        "Orchestration"
+      ],
       "license": "Open Access",
       "notes": "LangGraph framework for stateful multi-step AI agents — cyclic computation graphs, conditional edges, human-in-the-loop checkpointing, and multi-agent coordination."
     },
@@ -440,8 +778,18 @@
       "author": "MongoDB Inc.",
       "publisher": "MongoDB",
       "year": 2024,
-      "categories": ["Databases"],
-      "tags": ["MongoDB", "NoSQL", "Document Model", "Aggregation Pipeline", "Atlas", "Replica Set", "Vector Search"],
+      "categories": [
+        "Databases"
+      ],
+      "tags": [
+        "MongoDB",
+        "NoSQL",
+        "Document Model",
+        "Aggregation Pipeline",
+        "Atlas",
+        "Replica Set",
+        "Vector Search"
+      ],
       "license": "Open Access",
       "notes": "Official MongoDB reference — BSON document model, CRUD, aggregation pipeline, indexing strategies, transactions, replication, sharding, and Atlas Vector Search for RAG workloads."
     },
@@ -452,8 +800,18 @@
       "author": "Microsoft",
       "publisher": "Microsoft Azure",
       "year": 2024,
-      "categories": ["Databases", "Architecture"],
-      "tags": ["Azure SQL", "SQL Server", "Managed Instance", "Elastic Pool", "T-SQL", "Cloud Database"],
+      "categories": [
+        "Databases",
+        "Architecture"
+      ],
+      "tags": [
+        "Azure SQL",
+        "SQL Server",
+        "Managed Instance",
+        "Elastic Pool",
+        "T-SQL",
+        "Cloud Database"
+      ],
       "license": "Open Access",
       "notes": "Azure SQL family docs — SQL Database, Managed Instance, SQL on VMs. Covers elastic pools, Always Encrypted, read replicas, DTU vs vCore models, and query performance insights."
     },
@@ -464,8 +822,18 @@
       "author": "D. Richard Hipp et al.",
       "publisher": "SQLite.org",
       "year": 2024,
-      "categories": ["Databases", "Embedded"],
-      "tags": ["SQLite", "Embedded Database", "File-based", "ACID", "WAL Mode", "Serverless"],
+      "categories": [
+        "Databases",
+        "Embedded"
+      ],
+      "tags": [
+        "SQLite",
+        "Embedded Database",
+        "File-based",
+        "ACID",
+        "WAL Mode",
+        "Serverless"
+      ],
       "license": "Open Access",
       "notes": "SQLite documentation — the most widely deployed database engine. Serverless, zero-configuration, single-file ACID database widely used in embedded systems, IoT devices, and mobile apps."
     },
@@ -476,8 +844,18 @@
       "author": "Microsoft",
       "publisher": "Microsoft Azure",
       "year": 2024,
-      "categories": ["Databases", "Architecture"],
-      "tags": ["CosmosDB", "NoSQL", "Multi-model", "Global Distribution", "Consistency Levels", "Vector Search"],
+      "categories": [
+        "Databases",
+        "Architecture"
+      ],
+      "tags": [
+        "CosmosDB",
+        "NoSQL",
+        "Multi-model",
+        "Global Distribution",
+        "Consistency Levels",
+        "Vector Search"
+      ],
       "license": "Open Access",
       "notes": "Globally distributed multi-model database on Azure — SQL, MongoDB, Cassandra, Gremlin, and Table APIs; configurable consistency levels; built-in vector search for RAG workloads."
     },
@@ -488,8 +866,18 @@
       "author": "Redis Ltd.",
       "publisher": "Redis",
       "year": 2024,
-      "categories": ["Databases"],
-      "tags": ["Redis", "Cache", "In-memory", "Pub/Sub", "Streams", "Vector Database", "Redis Stack"],
+      "categories": [
+        "Databases"
+      ],
+      "tags": [
+        "Redis",
+        "Cache",
+        "In-memory",
+        "Pub/Sub",
+        "Streams",
+        "Vector Database",
+        "Redis Stack"
+      ],
       "license": "Open Access",
       "notes": "Redis documentation — data structures, persistence modes, Cluster, Sentinel, pub/sub, streams, and Redis Stack vector search for semantic caching and RAG pipelines."
     },
@@ -500,8 +888,18 @@
       "author": "Microsoft",
       "publisher": "Microsoft Azure",
       "year": 2024,
-      "categories": ["Architecture"],
-      "tags": ["Azure Functions", "Serverless", "FaaS", "Event-driven", "Triggers", "Bindings", "Durable Functions"],
+      "categories": [
+        "Architecture"
+      ],
+      "tags": [
+        "Azure Functions",
+        "Serverless",
+        "FaaS",
+        "Event-driven",
+        "Triggers",
+        "Bindings",
+        "Durable Functions"
+      ],
       "license": "Open Access",
       "notes": "Azure Functions — event-driven serverless compute with HTTP, timer, queue, Blob, and EventHub triggers. Includes Durable Functions for orchestration, fan-out/fan-in, and human interaction patterns."
     },
@@ -512,8 +910,18 @@
       "author": "Amazon Web Services",
       "publisher": "AWS",
       "year": 2024,
-      "categories": ["Architecture"],
-      "tags": ["AWS Lambda", "Serverless", "FaaS", "Event Source", "Concurrency", "Layers", "Cold Start"],
+      "categories": [
+        "Architecture"
+      ],
+      "tags": [
+        "AWS Lambda",
+        "Serverless",
+        "FaaS",
+        "Event Source",
+        "Concurrency",
+        "Layers",
+        "Cold Start"
+      ],
       "license": "Open Access",
       "notes": "AWS Lambda guide — function configuration, event source mappings, execution environments, concurrency controls, Lambda Layers, container images, and cold start optimisation."
     },
@@ -524,8 +932,16 @@
       "author": "Martin Fowler, James Lewis",
       "publisher": "martinfowler.com",
       "year": 2014,
-      "categories": ["Architecture"],
-      "tags": ["Microservices", "Service Decomposition", "API Gateway", "Distributed Systems", "Domain-driven Design"],
+      "categories": [
+        "Architecture"
+      ],
+      "tags": [
+        "Microservices",
+        "Service Decomposition",
+        "API Gateway",
+        "Distributed Systems",
+        "Domain-driven Design"
+      ],
       "license": "Open Access",
       "notes": "The seminal microservices article — service decomposition around business capabilities, decentralised data management, design for failure, smart endpoints/dumb pipes, and evolutionary design."
     },
@@ -536,8 +952,17 @@
       "author": "Adam Wiggins",
       "publisher": "12factor.net",
       "year": 2012,
-      "categories": ["Architecture"],
-      "tags": ["12-Factor", "Cloud-Native", "Stateless", "Config", "Disposability", "Dev/Prod Parity"],
+      "categories": [
+        "Architecture"
+      ],
+      "tags": [
+        "12-Factor",
+        "Cloud-Native",
+        "Stateless",
+        "Config",
+        "Disposability",
+        "Dev/Prod Parity"
+      ],
       "license": "Open Access",
       "notes": "Methodology for building scalable cloud-native SaaS — stateless processes, externalized config, disposable containers, dev/prod parity, and treating logs as event streams."
     },
@@ -548,8 +973,17 @@
       "author": "Microsoft",
       "publisher": "Microsoft Azure",
       "year": 2024,
-      "categories": ["Architecture"],
-      "tags": ["Cloud Architecture", "Design Patterns", "CQRS", "Saga Pattern", "Circuit Breaker", "Reliability"],
+      "categories": [
+        "Architecture"
+      ],
+      "tags": [
+        "Cloud Architecture",
+        "Design Patterns",
+        "CQRS",
+        "Saga Pattern",
+        "Circuit Breaker",
+        "Reliability"
+      ],
       "license": "Open Access",
       "notes": "Microsoft's cloud architecture reference — design patterns (CQRS, Saga, Strangler Fig, Circuit Breaker), reference architectures for serverless, microservices, and AI workloads on Azure."
     },
@@ -560,8 +994,19 @@
       "author": "TinyML Foundation",
       "publisher": "TinyML Foundation",
       "year": 2024,
-      "categories": ["Embedded", "AI-on-Embedded", "AI & ML"],
-      "tags": ["TinyML", "Edge AI", "On-device ML", "MCU", "MLPerf Tiny", "Neural Network"],
+      "categories": [
+        "Embedded",
+        "AI-on-Embedded",
+        "AI & ML"
+      ],
+      "tags": [
+        "TinyML",
+        "Edge AI",
+        "On-device ML",
+        "MCU",
+        "MLPerf Tiny",
+        "Neural Network"
+      ],
       "license": "Open Access",
       "notes": "Hub for the TinyML community — keynote talks, research papers, open benchmarks (MLPerf Tiny), and resources for deploying machine learning on microcontrollers and edge devices."
     },
@@ -572,12 +1017,22 @@
       "author": "Edge Impulse Inc.",
       "publisher": "Edge Impulse",
       "year": 2024,
-      "categories": ["Embedded", "AI-on-Embedded"],
-      "tags": ["Edge Impulse", "TinyML", "DSP Blocks", "Neural Architecture", "MCU Deployment", "FOMO", "Anomaly Detection"],
+      "categories": [
+        "Embedded",
+        "AI-on-Embedded"
+      ],
+      "tags": [
+        "Edge Impulse",
+        "TinyML",
+        "DSP Blocks",
+        "Neural Architecture",
+        "MCU Deployment",
+        "FOMO",
+        "Anomaly Detection"
+      ],
       "license": "Open Access",
       "notes": "End-to-end embedded ML platform — data collection, DSP feature extraction, EON neural architecture search, model profiling, and deployment to STM32, Arduino, Nordic, and Raspberry Pi targets."
     },
-
     {
       "id": "pride-and-prejudice",
       "title": "Pride and Prejudice",
@@ -586,8 +1041,16 @@
       "author": "Jane Austen",
       "publisher": "Project Gutenberg",
       "year": 1813,
-      "categories": ["Fiction"],
-      "tags": ["Classic Fiction", "Romance", "Regency", "Novel", "Public Domain"],
+      "categories": [
+        "Fiction"
+      ],
+      "tags": [
+        "Classic Fiction",
+        "Romance",
+        "Regency",
+        "Novel",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "Elizabeth Bennet and Mr. Darcy's slow-burning romance — one of the greatest novels in English literature, sharp on class, wit, and the art of first impressions."
     },
@@ -599,8 +1062,15 @@
       "author": "Bram Stoker",
       "publisher": "Project Gutenberg",
       "year": 1897,
-      "categories": ["Fiction"],
-      "tags": ["Gothic Horror", "Classic Fiction", "Epistolary Novel", "Public Domain"],
+      "categories": [
+        "Fiction"
+      ],
+      "tags": [
+        "Gothic Horror",
+        "Classic Fiction",
+        "Epistolary Novel",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "The definitive vampire novel told through journals, letters, and newspaper clippings — atmospheric Victorian horror that invented a genre."
     },
@@ -612,8 +1082,16 @@
       "author": "Arthur Conan Doyle",
       "publisher": "Project Gutenberg",
       "year": 1892,
-      "categories": ["Fiction"],
-      "tags": ["Detective Fiction", "Classic Fiction", "Mystery", "Short Stories", "Public Domain"],
+      "categories": [
+        "Fiction"
+      ],
+      "tags": [
+        "Detective Fiction",
+        "Classic Fiction",
+        "Mystery",
+        "Short Stories",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "The first short-story collection featuring Holmes and Watson — twelve cases including A Scandal in Bohemia and The Red-Headed League."
     },
@@ -625,8 +1103,16 @@
       "author": "Marcus Aurelius",
       "publisher": "Project Gutenberg",
       "year": 180,
-      "categories": ["Non-Fiction"],
-      "tags": ["Stoicism", "Philosophy", "Personal Journal", "Ancient Rome", "Public Domain"],
+      "categories": [
+        "Non-Fiction"
+      ],
+      "tags": [
+        "Stoicism",
+        "Philosophy",
+        "Personal Journal",
+        "Ancient Rome",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "The private journals of a Roman emperor — 12 books of Stoic philosophy on duty, resilience, impermanence, and the examined life. Still read by engineers, leaders, and athletes."
     },
@@ -638,8 +1124,16 @@
       "author": "Sun Tzu",
       "publisher": "Project Gutenberg",
       "year": -500,
-      "categories": ["Non-Fiction"],
-      "tags": ["Strategy", "Philosophy", "Military", "Classic", "Public Domain"],
+      "categories": [
+        "Non-Fiction"
+      ],
+      "tags": [
+        "Strategy",
+        "Philosophy",
+        "Military",
+        "Classic",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "13 chapters on strategy, intelligence, and adaptability — the most translated strategy text in history. Widely applied to business, engineering decisions, and project management."
     },
@@ -651,8 +1145,15 @@
       "author": "Thomas Paine",
       "publisher": "Project Gutenberg",
       "year": 1776,
-      "categories": ["Non-Fiction"],
-      "tags": ["Political Philosophy", "American Revolution", "Pamphlet", "Public Domain"],
+      "categories": [
+        "Non-Fiction"
+      ],
+      "tags": [
+        "Political Philosophy",
+        "American Revolution",
+        "Pamphlet",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "The 47-page pamphlet that helped ignite the American Revolution — a model of clear, forceful persuasive writing accessible to any reader."
     },
@@ -664,8 +1165,16 @@
       "author": "Benjamin Franklin",
       "publisher": "Project Gutenberg",
       "year": 1791,
-      "categories": ["Biography"],
-      "tags": ["Autobiography", "Founding Father", "Inventor", "Self-improvement", "Public Domain"],
+      "categories": [
+        "Biography"
+      ],
+      "tags": [
+        "Autobiography",
+        "Founding Father",
+        "Inventor",
+        "Self-improvement",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "Franklin's own account of his life — from candle-maker's son to printer, inventor, scientist, and statesman. Famous for the 13 Virtues self-improvement framework."
     },
@@ -677,8 +1186,16 @@
       "author": "Booker T. Washington",
       "publisher": "Project Gutenberg",
       "year": 1901,
-      "categories": ["Biography"],
-      "tags": ["Autobiography", "Education", "American History", "Resilience", "Public Domain"],
+      "categories": [
+        "Biography"
+      ],
+      "tags": [
+        "Autobiography",
+        "Education",
+        "American History",
+        "Resilience",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "Washington's autobiography tracing his journey from slavery to founding the Tuskegee Institute — a story of education, self-reliance, and practical progress."
     },
@@ -690,8 +1207,16 @@
       "author": "Helen Keller",
       "publisher": "Project Gutenberg",
       "year": 1903,
-      "categories": ["Biography"],
-      "tags": ["Autobiography", "Overcoming Adversity", "Education", "Inspirational", "Public Domain"],
+      "categories": [
+        "Biography"
+      ],
+      "tags": [
+        "Autobiography",
+        "Overcoming Adversity",
+        "Education",
+        "Inspirational",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "Helen Keller's memoir of growing up deaf-blind — her discovery of language through Anne Sullivan and her journey to college. One of the most inspiring autobiographies ever written."
     },
@@ -703,8 +1228,16 @@
       "author": "James Allen",
       "publisher": "Project Gutenberg",
       "year": 1903,
-      "categories": ["Self-Help"],
-      "tags": ["Mindset", "Self-improvement", "Philosophy", "Short Read", "Public Domain"],
+      "categories": [
+        "Self-Help"
+      ],
+      "tags": [
+        "Mindset",
+        "Self-improvement",
+        "Philosophy",
+        "Short Read",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "A short classic (under 30 pages) on the power of thought to shape character and circumstance. One of the earliest and most influential self-help books."
     },
@@ -716,8 +1249,16 @@
       "author": "Kahlil Gibran",
       "publisher": "Project Gutenberg",
       "year": 1923,
-      "categories": ["Self-Help"],
-      "tags": ["Poetry", "Philosophy", "Wisdom", "Short Read", "Public Domain"],
+      "categories": [
+        "Self-Help"
+      ],
+      "tags": [
+        "Poetry",
+        "Philosophy",
+        "Wisdom",
+        "Short Read",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "26 prose-poems on love, work, joy, sorrow, children, and freedom — Gibran's masterpiece of philosophical poetry. One of the best-selling books of the 20th century."
     },
@@ -729,10 +1270,109 @@
       "author": "Ralph Waldo Emerson",
       "publisher": "Project Gutenberg",
       "year": 1841,
-      "categories": ["Self-Help"],
-      "tags": ["Transcendentalism", "Philosophy", "Individualism", "Essay", "Public Domain"],
+      "categories": [
+        "Self-Help"
+      ],
+      "tags": [
+        "Transcendentalism",
+        "Philosophy",
+        "Individualism",
+        "Essay",
+        "Public Domain"
+      ],
       "license": "Public Domain",
       "notes": "Emerson's most famous essay — a call to trust your own instincts and resist social conformity. Contains the line: 'A foolish consistency is the hobgoblin of little minds.'"
+    },
+    {
+      "id": "bbc-learning-english",
+      "title": "BBC Learning English",
+      "url": "https://www.bbc.co.uk/learningenglish",
+      "author": "BBC Editorial Team",
+      "publisher": "BBC",
+      "year": 2024,
+      "license": "Open Access",
+      "categories": [
+        "English Learning"
+      ],
+      "tags": [
+        "Conversation",
+        "Grammar",
+        "Listening",
+        "Everyday English"
+      ],
+      "notes": "Free lessons on grammar, vocabulary, pronunciation and conversation for all levels."
+    },
+    {
+      "id": "elements-of-style-strunk",
+      "title": "The Elements of Style",
+      "url": "https://www.gutenberg.org/ebooks/37134",
+      "author": "William Strunk Jr.",
+      "publisher": "Project Gutenberg",
+      "year": 1918,
+      "license": "Public Domain",
+      "categories": [
+        "English Learning"
+      ],
+      "tags": [
+        "Writing",
+        "Style",
+        "Grammar",
+        "Communication"
+      ],
+      "notes": "Classic concise guide to clear and effective English writing — rules every writer should know."
+    },
+    {
+      "id": "how-to-speak-write-correctly",
+      "title": "How to Speak and Write Correctly",
+      "url": "https://www.gutenberg.org/ebooks/8096",
+      "author": "Joseph Devlin",
+      "publisher": "Project Gutenberg",
+      "year": 1910,
+      "license": "Public Domain",
+      "categories": [
+        "English Learning"
+      ],
+      "tags": [
+        "Speaking",
+        "Writing",
+        "Grammar",
+        "Vocabulary"
+      ],
+      "notes": "Practical guide covering vocabulary building, grammar rules, pronunciation and effective communication."
+    },
+    {
+      "id": "cambridge-dictionary-idioms",
+      "title": "Cambridge Dictionary — Idioms & Phrases",
+      "url": "https://dictionary.cambridge.org/dictionary/english",
+      "publisher": "Cambridge University Press",
+      "license": "Link-only",
+      "categories": [
+        "English Learning"
+      ],
+      "tags": [
+        "Idioms",
+        "Phrases",
+        "Vocabulary",
+        "Dictionary"
+      ],
+      "notes": "Comprehensive dictionary with idioms, common phrases, usage examples and audio pronunciation."
+    },
+    {
+      "id": "merriam-webster-word-of-day",
+      "title": "Merriam-Webster — Word of the Day",
+      "url": "https://www.merriam-webster.com/word-of-the-day",
+      "publisher": "Merriam-Webster",
+      "license": "Link-only",
+      "categories": [
+        "English Learning"
+      ],
+      "tags": [
+        "Vocabulary",
+        "Word Power",
+        "Dictionary",
+        "Daily Learning"
+      ],
+      "notes": "Daily vocabulary building with word origins, definitions, usage examples and pronunciation."
     }
   ]
 }
