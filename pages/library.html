@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Library — Bookshelf</title>
+  <meta name="description" content="Personal reading library — shortlisted books with reading progress." />
+  <link rel="stylesheet" href="../css/bookshelf.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="page-header">
+    <div>
+      <h1>Muthu Bookshelf</h1>
+      <div class="subtitle">Embedded Software &amp; Motor Technology references</div>
+    </div>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="bookshelf.html">Bookshelf</a>
+      <a href="library.html" class="active">My Library</a>
+      <a href="books-config.html">Add / Configure</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="lib-header">
+      <h2 class="lib-heading">My Library</h2>
+      <span class="lib-count" id="lib-count" aria-live="polite">—</span>
+      <div class="lib-sort-group">
+        <label for="lib-sort-by">Sort:</label>
+        <select id="lib-sort-by">
+          <option value="added">Recently Added</option>
+          <option value="lastread">Recently Read</option>
+          <option value="title">Title (A→Z)</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="lib-container" aria-live="polite" aria-atomic="false">
+      <div class="state-message" id="lib-loading">
+        <strong>Loading…</strong>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Personal bookshelf — single user / admin.
+    Browse the <a href="bookshelf.html">Bookshelf</a> and click
+    <em>+ Library</em> on any book to add it here.
+  </footer>
+
+  <script src="../js/library.js"></script>
+</body>
+</html>

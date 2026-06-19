@@ -504,15 +504,335 @@ details.advanced-panel summary {
   white-space: nowrap;
 }
 
+/* ---------------- Library toggle button on bookshelf cards ---------------- */
+
+.card-footer-actions {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.lib-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.76rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.lib-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.lib-toggle-btn.in-library {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---------------- Library page ---------------- */
+
+.lib-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.lib-heading {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.lib-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.lib-sort-group {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.lib-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lib-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+
+.lib-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.lib-card-title {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.lib-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.lib-progress-track {
+  background: var(--border);
+  border-radius: 999px;
+  height: 5px;
+  margin: 10px 0 4px;
+  overflow: hidden;
+}
+
+.lib-progress-fill {
+  background: var(--accent);
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.lib-progress-text {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------------- PDF Reader page ---------------- */
+
+.reader-page {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.reader-topbar {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  background: var(--card);
+}
+
+.reader-topbar .back-link {
+  font-size: 0.88rem;
+  color: var(--muted);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.reader-topbar .back-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.reader-title {
+  flex: 1;
+  font-size: 0.92rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.reader-canvas-wrapper {
+  flex: 1;
+  overflow: auto;
+  background: #0d0d1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+#pdf-canvas {
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
+}
+
+.reader-loading {
+  color: var(--muted);
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.reader-loading.error {
+  color: var(--danger);
+}
+
+.reader-bottombar {
+  border-top: 1px solid var(--border);
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  background: var(--card);
+}
+
+.reader-nav-btn {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.reader-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.reader-nav-btn:not(:disabled):hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.reader-page-input {
+  width: 56px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.reader-page-of {
+  color: var(--muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.reader-progress-bar {
+  flex: 1;
+  background: var(--border);
+  border-radius: 999px;
+  height: 6px;
+  overflow: hidden;
+  min-width: 60px;
+}
+
+.reader-progress-fill {
+  background: var(--accent);
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
 /* ---------------- Responsive ---------------- */
 
+/* Touch devices — enlarge tap targets and raise input font size to prevent
+   iOS Safari from auto-zooming (threshold is 16px / 1rem). */
+@media (pointer: coarse) {
+  .header-nav a {
+    padding: 10px 14px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="number"],
+  input[type="url"],
+  input[type="password"],
+  select {
+    font-size: 1rem;
+    padding: 11px 13px;
+    min-height: 44px;
+  }
+
+  select[multiple] {
+    min-height: 130px;
+  }
+
+  .tag-chip,
+  .category-chip {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+  }
+
+  .chips-helper button {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    min-height: 38px;
+  }
+
+  .results-meta button {
+    padding: 8px 14px;
+    min-height: 38px;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    min-height: 44px;
+  }
+}
+
+/* Tablet / mid-width — collapse grids before hitting the phone breakpoint */
+@media (max-width: 640px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small phone (≤ 480px) */
 @media (max-width: 480px) {
   .page-header {
-    padding: 16px;
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-nav {
+    width: 100%;
+  }
+
+  .page-header h1 {
+    font-size: 1.2rem;
   }
 
   main {
-    padding: 16px 14px 50px;
+    padding: 14px 12px 50px;
   }
 
   .book-grid {
@@ -523,11 +843,42 @@ details.advanced-panel summary {
     grid-template-columns: 1fr;
   }
 
+  .control-group .hint {
+    font-size: 0.8rem;
+  }
+
+  .group-heading {
+    font-size: 0.95rem;
+  }
+
   .form-actions {
     flex-direction: column;
   }
 
   .form-actions .btn {
     width: 100%;
+  }
+
+  .lib-card {
+    flex-direction: column;
+  }
+
+  .lib-card-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .lib-card-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .reader-bottombar {
+    gap: 6px;
+    padding: 8px 12px;
+  }
+
+  .reader-page-input {
+    width: 46px;
   }
 }

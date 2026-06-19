@@ -7,8 +7,9 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "../assets/books/books.json";
-  var STORAGE_KEY = "bookshelf.filters.v1";
+  var DATA_URL      = "../assets/books/books.json";
+  var STORAGE_KEY   = "bookshelf.filters.v1";
+  var LIBRARY_KEY   = "bookshelf.library.v1";
   var SEARCH_DEBOUNCE_MS = 180;
 
   /** @type {Array<Object>} raw list of book entries loaded from JSON */
@@ -57,6 +58,27 @@
       /* fall through */
     }
     return "#";
+  }
+
+  // ------------------------------------------------------------------------
+  // Library helpers (shared localStorage key with library.js / reader.js)
+  // ------------------------------------------------------------------------
+
+  function getLibrary() {
+    try { return JSON.parse(localStorage.getItem(LIBRARY_KEY) || "[]"); }
+    catch (e) { return []; }
+  }
+
+  function toggleLibrary(bookId) {
+    var lib = getLibrary();
+    var idx = lib.indexOf(bookId);
+    if (idx === -1) { lib.push(bookId); } else { lib.splice(idx, 1); }
+    try { localStorage.setItem(LIBRARY_KEY, JSON.stringify(lib)); } catch (e) {}
+    return lib.indexOf(bookId) !== -1;
+  }
+
+  function isInLibrary(bookId) {
+    return getLibrary().indexOf(bookId) !== -1;
   }
 
   function debounce(fn, delay) {
@@ -344,7 +366,18 @@
       ? '<p class="book-notes">' + escapeHtml(book.notes) + "</p>"
       : "";
 
-    var href = safeHref(book.url || "#");
+    var href  = safeHref(book.url || "#");
+    var inLib = isInLibrary(book.id || "");
+    var libBtnHtml =
+      '<button class="lib-toggle-btn' + (inLib ? " in-library" : "") + '" ' +
+      'data-book-id="' + escapeHtml(book.id || "") + '" type="button">' +
+      (inLib ? "\u2713 In Library" : "+ Library") +
+      "</button>";
+
+    // "Read PDF" shortcut for books that have a local PDF copy
+    var pdfLinkHtml = book.localPdf
+      ? '<a class="card-footer-link" href="reader.html?id=' + escapeHtml(book.id) + '">Read PDF \u203a</a>'
+      : "";
 
     return (
       '<article class="book-card">' +
@@ -357,9 +390,10 @@
         ? '<div class="book-meta-line">' + escapeHtml(metaParts.join(" \u00b7 ")) + "</div>"
         : "") +
       notesHtml +
-      (categoriesHtml || tagsHtml
-        ? '<div class="tag-row">' + categoriesHtml + tagsHtml + "</div>"
-        : "") +
+      '<div class="tag-row">' +
+      categoriesHtml + tagsHtml +
+      '<span class="card-footer-actions">' + pdfLinkHtml + libBtnHtml + "</span>" +
+      "</div>" +
       "</article>"
     );
   }
@@ -474,6 +508,16 @@
     els.sortBy.addEventListener("change", renderResults);
     els.tagTypeahead.addEventListener("input", debounce(applyTagTypeahead, SEARCH_DEBOUNCE_MS));
     els.resetFiltersBtn.addEventListener("click", resetFilters);
+
+    // Library toggle — event delegation since cards are dynamically rendered
+    els.resultsContainer.addEventListener("click", function (e) {
+      var btn = e.target.closest(".lib-toggle-btn");
+      if (!btn) return;
+      var bookId  = btn.getAttribute("data-book-id");
+      var nowInLib = toggleLibrary(bookId);
+      btn.classList.toggle("in-library", nowInLib);
+      btn.textContent = nowInLib ? "✓ In Library" : "+ Library";
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {

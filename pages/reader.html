@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reader — Bookshelf</title>
+  <link rel="stylesheet" href="../css/bookshelf.css" />
+</head>
+<body class="reader-page">
+
+  <header class="reader-topbar">
+    <a href="library.html" class="back-link" aria-label="Back to Library">&#8592; Library</a>
+    <span class="reader-title" id="reader-book-title">Loading…</span>
+    <button class="lib-toggle-btn" id="reader-lib-btn" type="button">+ Library</button>
+  </header>
+
+  <div class="reader-canvas-wrapper" id="reader-canvas-container">
+    <div class="reader-loading" id="reader-status">Loading PDF…</div>
+  </div>
+
+  <footer class="reader-bottombar">
+    <button class="reader-nav-btn" id="reader-prev-btn" disabled title="Previous page (← arrow key)">&#8249;</button>
+    <button class="reader-nav-btn" id="reader-next-btn" disabled title="Next page (→ arrow key)">&#8250;</button>
+    <input
+      class="reader-page-input"
+      id="reader-page-input"
+      type="number"
+      min="1"
+      value="1"
+      aria-label="Go to page"
+    />
+    <span class="reader-page-of" id="reader-page-display">/ —</span>
+    <div class="reader-progress-bar" aria-label="Reading progress" title="Reading progress">
+      <div class="reader-progress-fill" id="reader-progress-fill" style="width:0%"></div>
+    </div>
+  </footer>
+
+  <!-- PDF.js from CDN — must load before reader.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="../js/reader.js"></script>
+</body>
+</html>

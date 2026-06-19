@@ -17,6 +17,7 @@
     </div>
     <nav class="header-nav" aria-label="Primary">
       <a href="bookshelf.html" class="active">Bookshelf</a>
+      <a href="library.html">My Library</a>
       <a href="books-config.html">Add / Configure</a>
     </nav>
   </header>
@@ -35,15 +36,23 @@
 
       <div class="control-group">
         <label for="category-filter">Categories</label>
-        <select id="category-filter" multiple size="6" aria-describedby="category-hint">
+        <select id="category-filter" multiple size="12" aria-describedby="category-hint">
           <option value="Embedded">Embedded</option>
           <option value="Motor Control">Motor Control</option>
           <option value="Power Electronics">Power Electronics</option>
+          <option value="Protocols">Protocols</option>
           <option value="Real-Time">Real-Time</option>
           <option value="Safety">Safety</option>
           <option value="AI-on-Embedded">AI-on-Embedded</option>
+          <option value="AI & ML">AI &amp; ML</option>
+          <option value="Databases">Databases</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Biography">Biography</option>
+          <option value="Self-Help">Self-Help</option>
         </select>
-        <span class="hint" id="category-hint">Ctrl/Cmd-click to select multiple. None selected = All.</span>
+        <span class="hint" id="category-hint">Tap to toggle (mobile) or Ctrl/Cmd-click (desktop). None selected = All.</span>
       </div>
 
       <div class="control-group">
@@ -56,7 +65,7 @@
           aria-describedby="tag-hint"
         />
         <select id="tag-filter" multiple size="6"></select>
-        <span class="hint" id="tag-hint">Ctrl/Cmd-click to select multiple. None selected = All.</span>
+        <span class="hint" id="tag-hint">Tap to toggle (mobile) or Ctrl/Cmd-click (desktop). None selected = All.</span>
       </div>
 
       <div class="control-group">
