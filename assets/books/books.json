@@ -1,0 +1,149 @@
+{
+  "updatedAt": "2026-06-19T00:00:00.000Z",
+  "books": [
+    {
+      "id": "ti-spra524-svpwm",
+      "title": "Sinusoidal Control of PMSM Motors with dsPIC30F (SVPWM Reference)",
+      "url": "https://www.ti.com/lit/an/spra524/spra524.pdf",
+      "author": "Texas Instruments",
+      "publisher": "Texas Instruments",
+      "year": 1998,
+      "categories": ["Motor Control", "Power Electronics"],
+      "tags": ["SVPWM", "PMSM", "Sinusoidal Drive"],
+      "license": "Link-only",
+      "notes": "Classic application note covering space vector PWM theory and sinusoidal commutation fundamentals for PMSM motors."
+    },
+    {
+      "id": "ti-sprabq8-foc-pmsm",
+      "title": "Field Oriented Control of Permanent Magnet Synchronous Motors",
+      "url": "https://www.ti.com/lit/an/sprabq8/sprabq8.pdf",
+      "author": "Texas Instruments",
+      "publisher": "Texas Instruments",
+      "year": 2013,
+      "categories": ["Motor Control", "Power Electronics", "Real-Time"],
+      "tags": ["FOC", "PMSM", "Clarke Transform", "Park Transform", "PI Control"],
+      "license": "Link-only",
+      "notes": "Core FOC reference: Clarke/Park transforms, current control loops, and PI tuning guidance for PMSM drives."
+    },
+    {
+      "id": "ti-instaspin-foc-overview",
+      "title": "InstaSPIN-FOC and InstaSPIN-MOTION User's Guide",
+      "url": "https://www.ti.com/lit/ug/sprugm7g/sprugm7g.pdf",
+      "author": "Texas Instruments",
+      "publisher": "Texas Instruments",
+      "year": 2017,
+      "categories": ["Motor Control", "Real-Time"],
+      "tags": ["FOC", "Sensorless", "FAST Observer", "PMSM", "BLDC"],
+      "license": "Link-only",
+      "notes": "Sensorless FOC overview built around TI's FAST estimator (flux, angle, speed, torque) for self-tuning motor control."
+    },
+    {
+      "id": "microchip-an1078-sensorless-bldc",
+      "title": "AN1078: Sensorless Field Oriented Control of a PMSM",
+      "url": "https://ww1.microchip.com/downloads/en/AppNotes/01078B.pdf",
+      "author": "Microchip Technology",
+      "publisher": "Microchip",
+      "year": 2010,
+      "categories": ["Motor Control", "Real-Time"],
+      "tags": ["FOC", "Sensorless", "PMSM", "SMO"],
+      "license": "Link-only",
+      "notes": "Sliding mode observer based sensorless FOC implementation with dsPIC reference firmware structure."
+    },
+    {
+      "id": "st-um1052-stm32-mc-library",
+      "title": "STM32 PMSM FOC SDK / Motor Control Firmware Library (UM1052)",
+      "url": "https://www.st.com/resource/en/user_manual/um1052-stm32-pmsm-foc-sdk-v34-stmicroelectronics.pdf",
+      "author": "STMicroelectronics",
+      "publisher": "STMicroelectronics",
+      "year": 2019,
+      "categories": ["Motor Control", "Embedded", "Real-Time"],
+      "tags": ["FOC", "PMSM", "STM32", "Motor Control Workbench"],
+      "license": "Link-only",
+      "notes": "User manual for ST's motor control firmware library covering FOC state machine, workbench tooling, and project configuration."
+    },
+    {
+      "id": "ti-dtc-tutorial-mcd",
+      "title": "Direct Torque Control: Theory and Implementation Basics",
+      "url": "https://www.mathworks.com/help/mcb/gs/direct-torque-control.html",
+      "author": "MathWorks",
+      "publisher": "MathWorks",
+      "year": 2023,
+      "categories": ["Motor Control"],
+      "tags": ["DTC", "Torque Control", "PMSM", "Induction Motor"],
+      "license": "Link-only",
+      "notes": "Introductory tutorial on Direct Torque Control concepts, switching tables, and hysteresis comparators."
+    },
+    {
+      "id": "arm-cmsis-nn-guide",
+      "title": "CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M",
+      "url": "https://arm-software.github.io/CMSIS-NN/latest/index.html",
+      "author": "Arm Software",
+      "publisher": "Arm",
+      "year": 2024,
+      "categories": ["Embedded", "AI-on-Embedded"],
+      "tags": ["CMSIS", "TinyML", "Cortex-M", "Quantization"],
+      "license": "Open Access",
+      "notes": "Reference documentation for CMSIS-NN kernels used to accelerate quantized neural network inference on Cortex-M MCUs."
+    },
+    {
+      "id": "tflite-micro-docs",
+      "title": "TensorFlow Lite for Microcontrollers Documentation",
+      "url": "https://www.tensorflow.org/lite/microcontrollers",
+      "author": "Google",
+      "publisher": "TensorFlow",
+      "year": 2024,
+      "categories": ["Embedded", "AI-on-Embedded"],
+      "tags": ["TFLM", "TinyML", "Edge AI", "Quantization"],
+      "license": "Open Access",
+      "notes": "Official docs for deploying TFLite Micro models on resource-constrained microcontrollers, including memory planning."
+    },
+    {
+      "id": "misra-c-2012-overview",
+      "title": "MISRA C:2012 Guidelines Overview",
+      "url": "https://www.misra.org.uk/misra-c/",
+      "author": "MISRA Consortium",
+      "publisher": "MISRA",
+      "year": 2012,
+      "categories": ["Safety", "Embedded"],
+      "tags": ["MISRA", "Static Analysis", "Coding Standard", "ISO 26262"],
+      "license": "Link-only",
+      "notes": "Landing page for the MISRA C coding guideline set used widely in automotive and safety-critical embedded software."
+    },
+    {
+      "id": "freertos-kernel-docs",
+      "title": "FreeRTOS Kernel Developer Documentation",
+      "url": "https://www.freertos.org/Documentation/RTOS_book.html",
+      "author": "Amazon Web Services",
+      "publisher": "FreeRTOS",
+      "year": 2023,
+      "categories": ["Embedded", "Real-Time"],
+      "tags": ["RTOS", "FreeRTOS", "Scheduling", "Task Management"],
+      "license": "Open Access",
+      "notes": "Reference guide and free e-book covering FreeRTOS task scheduling, queues, semaphores, and memory management."
+    },
+    {
+      "id": "ti-svpwm-overmodulation-spra555",
+      "title": "Implementing Space Vector Modulation with Overmodulation",
+      "url": "https://www.ti.com/lit/an/spra555/spra555.pdf",
+      "author": "Texas Instruments",
+      "publisher": "Texas Instruments",
+      "year": 1999,
+      "categories": ["Motor Control", "Power Electronics"],
+      "tags": ["SVPWM", "Overmodulation", "Inverter"],
+      "license": "Link-only",
+      "notes": "Detailed treatment of SVPWM sector identification and overmodulation strategies for three-phase inverters."
+    },
+    {
+      "id": "iso26262-overview-functional-safety",
+      "title": "ISO 26262: Road Vehicles Functional Safety (Standard Overview)",
+      "url": "https://www.iso.org/standard/68383.html",
+      "author": "International Organization for Standardization",
+      "publisher": "ISO",
+      "year": 2018,
+      "categories": ["Safety", "Embedded"],
+      "tags": ["ISO 26262", "Functional Safety", "ASIL"],
+      "license": "Link-only",
+      "notes": "Official ISO landing page describing the scope and structure of the ISO 26262 functional safety standard for road vehicles."
+    }
+  ]
+}

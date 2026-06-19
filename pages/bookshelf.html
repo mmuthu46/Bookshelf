@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf — Embedded &amp; Motor Technology</title>
+  <meta name="description" content="Personal bookshelf of embedded software and motor control references." />
+  <link rel="stylesheet" href="../css/bookshelf.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="page-header">
+    <div>
+      <h1>Muthu Bookshelf</h1>
+      <div class="subtitle">Embedded Software &amp; Motor Technology references</div>
+    </div>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="bookshelf.html" class="active">Bookshelf</a>
+      <a href="books-config.html">Add / Configure</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="controls" aria-label="Search and filter controls">
+      <div class="control-group">
+        <label for="search-input">Search</label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search title, author, publisher, tags…"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="control-group">
+        <label for="category-filter">Categories</label>
+        <select id="category-filter" multiple size="6" aria-describedby="category-hint">
+          <option value="Embedded">Embedded</option>
+          <option value="Motor Control">Motor Control</option>
+          <option value="Power Electronics">Power Electronics</option>
+          <option value="Real-Time">Real-Time</option>
+          <option value="Safety">Safety</option>
+          <option value="AI-on-Embedded">AI-on-Embedded</option>
+        </select>
+        <span class="hint" id="category-hint">Ctrl/Cmd-click to select multiple. None selected = All.</span>
+      </div>
+
+      <div class="control-group">
+        <label for="tag-filter">Tags</label>
+        <input
+          type="text"
+          id="tag-typeahead"
+          placeholder="Type to find a tag…"
+          autocomplete="off"
+          aria-describedby="tag-hint"
+        />
+        <select id="tag-filter" multiple size="6"></select>
+        <span class="hint" id="tag-hint">Ctrl/Cmd-click to select multiple. None selected = All.</span>
+      </div>
+
+      <div class="control-group">
+        <label for="group-by">Group by</label>
+        <select id="group-by">
+          <option value="none">None</option>
+          <option value="year">Year</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="sort-by">Sort by</label>
+        <select id="sort-by">
+          <option value="recent">Recently Added</option>
+          <option value="title">Title (A→Z)</option>
+          <option value="year">Year (newest first)</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="results-meta">
+      <span id="results-count" aria-live="polite">Loading…</span>
+      <button type="button" id="reset-filters-btn">Reset filters</button>
+    </div>
+
+    <div id="results-container" aria-live="polite" aria-atomic="false">
+      <div class="state-message" id="initial-loading-message">
+        <strong>Loading bookshelf…</strong>
+        Fetching assets/books/books.json
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Personal bookshelf — single user / admin. Data lives in
+    <code>assets/books/books.json</code>. Add entries via the
+    <a href="books-config.html">Configure</a> page.
+  </footer>
+
+  <script src="../js/bookshelf.js"></script>
+</body>
+</html>

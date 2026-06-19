@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure Bookshelf — Add Entry</title>
+  <meta name="description" content="Add a new entry to the personal embedded/motor control bookshelf." />
+  <link rel="stylesheet" href="../css/bookshelf.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="page-header">
+    <div>
+      <h1>Configure Bookshelf</h1>
+      <div class="subtitle">Add a new reference entry</div>
+    </div>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="bookshelf.html">Bookshelf</a>
+      <a href="books-config.html" class="active">Add / Configure</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="form-card">
+      <h2>New entry</h2>
+      <form id="book-form" novalidate>
+        <div class="form-grid">
+
+          <div class="control-group full-width">
+            <label for="field-title">Title <span aria-hidden="true">*</span></label>
+            <input type="text" id="field-title" name="title" required maxlength="200" />
+            <div class="field-error" id="error-title"></div>
+          </div>
+
+          <div class="control-group full-width">
+            <label for="field-url">URL <span aria-hidden="true">*</span></label>
+            <input type="url" id="field-url" name="url" required placeholder="https://…" />
+            <div class="field-error" id="error-url"></div>
+          </div>
+
+          <div class="control-group">
+            <label for="field-author">Author</label>
+            <input type="text" id="field-author" name="author" maxlength="150" />
+          </div>
+
+          <div class="control-group">
+            <label for="field-publisher">Publisher</label>
+            <input type="text" id="field-publisher" name="publisher" maxlength="150" />
+          </div>
+
+          <div class="control-group">
+            <label for="field-year">Year</label>
+            <input type="number" id="field-year" name="year" min="1900" max="2100" step="1" />
+            <div class="field-error" id="error-year"></div>
+          </div>
+
+          <div class="control-group">
+            <label for="field-license">License</label>
+            <select id="field-license" name="license">
+              <option value="Link-only">Link-only</option>
+              <option value="Open Access">Open Access</option>
+              <option value="CC-BY">CC-BY</option>
+              <option value="CC-BY-SA">CC-BY-SA</option>
+              <option value="Proprietary">Proprietary</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="control-group full-width">
+            <label for="field-categories">Categories</label>
+            <select id="field-categories" name="categories" multiple size="6">
+              <option value="Embedded">Embedded</option>
+              <option value="Motor Control">Motor Control</option>
+              <option value="Power Electronics">Power Electronics</option>
+              <option value="Real-Time">Real-Time</option>
+              <option value="Safety">Safety</option>
+              <option value="AI-on-Embedded">AI-on-Embedded</option>
+            </select>
+            <span class="hint">Ctrl/Cmd-click to select multiple categories.</span>
+          </div>
+
+          <div class="control-group full-width">
+            <label for="field-tags">Tags (comma separated)</label>
+            <input
+              type="text"
+              id="field-tags"
+              name="tags"
+              placeholder="e.g. FOC, SVPWM, PMSM, BLDC"
+            />
+            <div class="chips-helper" id="tag-chip-helper" aria-label="Common tags, click to insert">
+              <button type="button" data-tag="FOC">FOC</button>
+              <button type="button" data-tag="SVPWM">SVPWM</button>
+              <button type="button" data-tag="PMSM">PMSM</button>
+              <button type="button" data-tag="BLDC">BLDC</button>
+              <button type="button" data-tag="CMSIS">CMSIS</button>
+              <button type="button" data-tag="TFLM">TFLM</button>
+              <button type="button" data-tag="RTOS">RTOS</button>
+              <button type="button" data-tag="MISRA">MISRA</button>
+              <button type="button" data-tag="ISO 26262">ISO 26262</button>
+              <button type="button" data-tag="Sensorless">Sensorless</button>
+            </div>
+          </div>
+
+          <div class="control-group full-width">
+            <label for="field-notes">Notes</label>
+            <textarea id="field-notes" name="notes" maxlength="400" placeholder="Short description…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn" id="generate-btn">Generate JSON snippet</button>
+          <button type="button" class="btn secondary" id="clear-form-btn">Clear form</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="form-card" id="snippet-section" hidden>
+      <h2>Generated entry</h2>
+      <p class="hint">
+        Open <code>assets/books/books.json</code>, paste this object into the
+        <code>"books"</code> array (keep the JSON valid — add a comma after the
+        previous entry if needed), then commit.
+      </p>
+      <div id="duplicate-notice"></div>
+      <pre class="snippet-box" id="snippet-output" tabindex="0"></pre>
+      <div class="form-actions">
+        <button type="button" class="btn secondary" id="copy-snippet-btn">Copy to clipboard</button>
+      </div>
+    </section>
+
+    <section class="form-card">
+      <details class="advanced-panel" id="advanced-panel">
+        <summary>Advanced: Commit via GitHub API (optional)</summary>
+        <div style="margin-top: 14px;">
+          <div class="notice warn">
+            <strong>Token handling notice:</strong> Your Personal Access Token is
+            kept only in an in-memory JavaScript variable for this page session.
+            It is never written to localStorage, sessionStorage, cookies, or sent
+            anywhere except directly to <code>api.github.com</code> from your
+            browser. Reloading or closing this tab clears it. Use a short-lived,
+            fine-grained token scoped to this repository only
+            (<code>contents: write</code>), and revoke it when you're done.
+          </div>
+
+          <div class="form-grid">
+            <div class="control-group">
+              <label for="field-owner">Repo owner</label>
+              <input type="text" id="field-owner" value="" placeholder="github-username" />
+            </div>
+            <div class="control-group">
+              <label for="field-repo">Repo name</label>
+              <input type="text" id="field-repo" value="" placeholder="Bookshelf" />
+            </div>
+            <div class="control-group">
+              <label for="field-branch">Branch</label>
+              <input type="text" id="field-branch" value="main" />
+            </div>
+            <div class="control-group full-width">
+              <label for="field-token">GitHub Personal Access Token</label>
+              <input type="password" id="field-token" autocomplete="off" placeholder="ghp_… (not stored)" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn" id="commit-api-btn">Commit via GitHub API</button>
+          </div>
+
+          <div class="api-status-log" id="api-status-log" aria-live="polite">Ready.</div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Personal bookshelf — single user / admin. <a href="bookshelf.html">Back to bookshelf</a>
+  </footer>
+
+  <script src="../js/books-config.js"></script>
+</body>
+</html>
